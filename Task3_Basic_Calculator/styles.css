@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffeab0; /* Light background */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.calculator {
+    background-color: #FABC3F; /* Background color of calculator */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Set a fixed width for the calculator */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.calculator.dark {
+    background-color: #393053; /* Darker background */
+    color: white; /* Text color in dark mode */
+}
+
+body.dark {
+    background-color: #18122B; /* Dark background for body */
+}
+
+h1 {
+    text-align: center;
+    color: #18122B; /* Header color */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.calculator.dark h1 {
+    color: #FABC3F; /* Change header color in dark mode */
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space below the theme switch */
+}
+
+.sun, .moon {
+    font-size: 20px; /* Icon size */
+    color: #E85C0D; /* Icon color */
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #443C68; /* Background color of the switch */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #FABC3F; /* Color of the switch knob */
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth transition for the knob */
+}
+
+.calculator.dark .slider {
+    transform: translateX(20px); /* Move the knob to the right in dark mode */
+    background-color: #C7253E; /* Knob color in dark mode */
+}
+
+#display {
+    width: calc(100%); /* Adjust width to fit the calculator */
+    height: 60px; /* Set the height for better visibility */
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #C7253E; /* Border color */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition for border and text color */
+    color: #18122B; /* Default text color */
+}
+
+.calculator.dark #display {
+    border-color: #FABC3F; /* Change border color in dark mode */
+    color: white; /* Text color in dark mode */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #E85C0D; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #821131; /* Hover color */
+}
+
+.calculator.dark button {
+    background-color: #C7253E; /* Button color in dark mode */
+}

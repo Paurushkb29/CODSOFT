@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PKB Shop Smart</h1>
+        <nav>
+            <ul>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#featured">Featured Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2>Welcome to PKB Shop Smart!</h2>
+            <p>Find the best deals on the latest products.</p><br/>
+            <a href="#featured" class="cta-button">Shop Now</a>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="categories-wrapper">
+                <button class="arrow left-arrow" onclick="scrollLeft1('categories-container')">&#10094;</button>
+                <div class="categories-container" id="categories-container">
+                    <div class="category">
+                        <h3>Electronics</h3>
+                        <img src="../Task2_LandingPage/images/electronics.jpg" alt="Electronics">
+                    </div>
+                    <div class="category">
+                        <h3>Fashion</h3>
+                        <img src="../Task2_LandingPage/images/fashion.jpg" alt="Fashion">
+                    </div>
+                    <div class="category">
+                        <h3>Home & Garden</h3>
+                        <img src="../Task2_LandingPage/images/home-garden.jpg" alt="Home & Garden">
+                    </div>
+                    <div class="category">
+                        <h3>Toys</h3>
+                        <img src="../Task2_LandingPage/images/toys.jpg" alt="Toys">
+                    </div>
+                    <div class="category">
+                        <h3>Sports</h3>
+                        <img src="../Task2_LandingPage/images/sports.jpg" alt="Sports">
+                    </div>
+                    <div class="category">
+                        <h3>Books</h3>
+                        <img src="../Task2_LandingPage/images/books.jpg" alt="Books">
+                    </div>
+                    <div class="category">
+                        <h3>Beauty</h3>
+                        <img src="../Task2_LandingPage/images/beauty.jpg" alt="Beauty">
+                    </div>
+                    <div class="category">
+                        <h3>Health</h3>
+                        <img src="../Task2_LandingPage/images/health.jpg" alt="Health">
+                    </div>
+                    <div class="category">
+                        <h3>Automotive</h3>
+                        <img src="../Task2_LandingPage/images/automotive.jpg" alt="Automotive">
+                    </div>
+                    <div class="category">
+                        <h3>Jewelry</h3>
+                        <img src="../Task2_LandingPage/images/jewelry.jpg" alt="Jewelry">
+                    </div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollRight('categories-container')">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Products</h2>
+            <div class="featured-wrapper">
+                <button class="arrow left-arrow" onclick="scrollLeft1('featured-products-container')">&#10094;</button>
+                <div class="featured-products-container" id="featured-products-container">
+                    <div class="product">
+                        <h3>Mobile</h3>
+                        <img src="../Task2_LandingPage/images/mobile.jpg" alt="Product 1">
+                        <p>Description: Latest smartphone with high-end features.</p>
+                        <p>Price: ₹15,999</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Pant</h3>
+                        <img src="../Task2_LandingPage/images/pant.jpg" alt="Product 2">
+                        <p>Description: Stylish and comfortable denim pants.</p>
+                        <p>Price: ₹2,499</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Shovel</h3>
+                        <img src="../Task2_LandingPage/images/shovel.jpg" alt="Product 3">
+                        <p>Description: Durable shovel for gardening and landscaping.</p>
+                        <p>Price: ₹799</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Toy Car</h3>
+                        <img src="../Task2_LandingPage/images/car.jpg" alt="Product 4">
+                        <p>Description: Remote-controlled toy car for kids.</p>
+                        <p>Price: ₹1,299</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Batt & Ball</h3>
+                        <img src="../Task2_LandingPage/images/batt_and_ball.jpg" alt="Product 5">
+                        <p>Description: Perfect for outdoor games and sports.</p>
+                        <p>Price: ₹599</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Harry Potter</h3>
+                        <img src="../Task2_LandingPage/images/harry_potter_books.jpg" alt="Product 6">
+                        <p>Description: Complete set of Harry Potter books.</p>
+                        <p>Price: ₹3,499</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Makeup Box</h3>
+                        <img src="../Task2_LandingPage/images/makeup_box.jpg" alt="Product 7">
+                        <p>Description: Stylish makeup box for cosmetics.</p>
+                        <p>Price: ₹1,199</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Statescope</h3>
+                        <img src="../Task2_LandingPage/images/statescope.jpg" alt="Product 8">
+                        <p>Description: High-quality stethoscope for medical use.</p>
+                        <p>Price: ₹2,299</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Tire</h3>
+                        <img src="../Task2_LandingPage/images/tire.jpg" alt="Product 9">
+                        <p>Description: Durable All-Weather Tire for Vehicles.</p>
+                        <p>Price: ₹4,999</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <h3>Neckless</h3>
+                        <img src="../Task2_LandingPage/images/necklace.jpg" alt="Product 10">
+                        <p>Description: Elegant necklace for special occasions.</p>
+                        <p>Price: ₹2,499</p>
+                        <button id="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollRight('featured-products-container')">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact" style="text-align: center;">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@pkbshopsmart.com">info@pkbshopsmart.com</a></p>
+            <p>Phone: +91 2548554585</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PKB Shop Smart. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollLeft1(containerId1) {
+            const container = document.getElementById(containerId1);
+            container.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+
+        function scrollRight(containerId) {
+            const container = document.getElementById(containerId);
+            container.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

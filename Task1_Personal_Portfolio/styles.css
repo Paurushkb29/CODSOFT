@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7A4B4B; 
+    color: #333;
+}
+
+h1 {
+    color: #fff; 
+    text-align: center;
+}
+
+h2, h3 {
+    color: #A75D5D; 
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #FCE8E8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    background-color: #D3756B; 
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* About Section */
+#about .profile-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Education and Skills List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Projects Section */
+.project {
+    background-color: #F0997D; 
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #A75D5D; 
+}
+
+.project a {
+    text-decoration: none;
+    color: #D3756B; 
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 20px; 
+    margin: 20px auto;
+    max-width: 1000px; 
+    background-color: #F0997D; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#certifications h2 {
+    color: #A75D5D; 
+    font-size: 24px;
+    margin-bottom: 15px; 
+    text-align: center; 
+}
+
+#certifications ul {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center;
+}
+
+#certifications li {
+    background-color: #fff; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    margin-bottom: 10px;
+    transition: background-color 0.3s; 
+}
+
+#certifications li:hover {
+    background-color: #e7f3ff; 
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+}
+
+#resume button {
+    background-color: #D3756B; 
+    color: #fff; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    border: none;
+    cursor: pointer; 
+    margin-top: 10px;
+}
+
+#resume button:hover {
+    background-color: #A75D5D; 
+}
+
+/* Preview section styles */
+#resume-preview {
+    margin-top: 20px;
+}
+
+#resume-preview iframe {
+    border: 1px solid #ccc;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none; 
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    padding: 5px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #D3756B;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #A75D5D; 
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #D3756B; 
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .project {
+        padding: 10px;
+    }
+}

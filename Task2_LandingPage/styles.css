@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A1D6B2; /* Background color */
+    color: #333;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 0; /* Hides the scrollbar */
+}
+
+
+header {
+    background-color: #CEDF9F; /* Header background color */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #F1F3C2; /* Hero section background color */
+}
+
+#product-btn,.cta-button {
+    padding: 10px 20px;
+    background-color: #E8B86D; /* CTA button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#product-btn:hover,.cta-button:hover {
+    background-color: #e6e4e1; /* CTA button hover color */
+}
+
+.categories-wrapper,
+.featured-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.categories-container,
+.featured-products-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.category, .product {
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+    width: 150px; /* Fixed width for consistency */
+    margin: 0 10px;
+    text-align: center;
+    background-color: #F1F3C2; /* Box background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.category img, .product img {
+    width: 100%; /* Make images responsive */
+    height: 100px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.arrow {
+    background-color: #E8B86D; /* Arrow button color */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.arrow:hover {
+    background-color: #D8A55C; /* Arrow hover color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #CEDF9F; /* Footer background color */
+}
+
+footer p {
+    margin: 0;
+}
